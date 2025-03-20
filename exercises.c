@@ -10,6 +10,7 @@
 
 //Funciones auxiliares que puedes utilizar para debuggear tus ejercicios
 //NO MODIFICAR
+
 void imprime_lista(List *L) {
    int *dato;
    dato = (int*)first(L);
@@ -43,6 +44,11 @@ Al finalizar retorna la lista creada.
 
 List* crea_lista() {
    List* L = create_list();
+   for ( int k  = 1 ; k <= 10 ; k++ ) {
+      int *elem = (int*)malloc(sizeof(int));
+      *elem = k;
+      push_back(L, elem);
+   }   
    return L;
 }
 
@@ -52,7 +58,14 @@ Crea una función que reciba una lista de enteros (int*) y
 retorne la suma de sus elementos.
 */
 int sumaLista(List *L) {
-   return 0;
+   int suma = 0;
+   int *elem = first(L);
+   while (elem != NULL) {
+      suma += *elem;
+      elem = next(L);
+   }
+   return suma;
+
 }
 
 /*
@@ -65,6 +78,18 @@ posiciona en el elemento anterior.
 */
 
 void eliminaElementos(List*L, int elem){
+   int *dato = first(L); 
+   while (dato != NULL){
+      if (*dato == elem)
+      {
+         dato =  popCurrent(L);
+      }
+      else
+      {
+         dato = next(L);
+      }
+
+   }
 
 }
 
@@ -76,6 +101,9 @@ Puedes usar una pila auxiliar.
 */
 
 void copia_pila(Stack* P1, Stack* P2) {
+   Stack* pilaAux 
+   
+
 }
 
 /*

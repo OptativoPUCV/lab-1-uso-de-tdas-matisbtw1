@@ -2,3 +2,18 @@ Thu, Mar 20, 2025  6:36:35 PM:
  tests:  0|5
 total_score: 0/70
 3f6cb15
+Thu, Mar 20, 2025  8:58:23 PM: 
+ exercises.c | 29 ++++++++++++++++++++++++++++-
+ 1 file changed, 28 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crea_lista':
+exercises.c:50:7: error: implicit declaration of function 'push_back' [-Werror=implicit-function-declaration]
+       push_back(L, elem);
+       ^~~~~~~~~
+exercises.c: In function 'copia_pila':
+exercises.c:107:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '}' token
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+80747b4
