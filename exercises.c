@@ -59,10 +59,10 @@ retorne la suma de sus elementos.
 */
 int sumaLista(List *L) {
    int suma = 0;
-   int *elem = (int*)first(L);
+   int *elem = first(L);
    while (elem != NULL) {
       suma += *elem;
-      elem = (int*)next(L);
+      elem = next(L);
    }
    return suma;
 
@@ -102,8 +102,20 @@ Puedes usar una pila auxiliar.
 
 void copia_pila(Stack* P1, Stack* P2) {
    Stack* pilaAux = create_stack(); 
-
-   
+   while (top(P1) != NULL)
+   {
+      void* elem = top(P1);
+      push(pilaAux, elem);
+      pop(P1);
+   }
+   while (top(pilaAux) != NULL)
+   {
+      void* elem = top(pilaAux);
+      push(P1, elem);
+      push(P2, elem);
+      pop(pilaAux);
+   }
+   free(pilaAux);
 
 }
 
