@@ -47,7 +47,7 @@ List* crea_lista() {
    for ( int k  = 1 ; k <= 10 ; k++ ) {
       int *elem = (int*)malloc(sizeof(int));
       *elem = k;
-      push_back(L, elem);
+      pushBack(L, elem);
    }   
    return L;
 }
@@ -101,7 +101,8 @@ Puedes usar una pila auxiliar.
 */
 
 void copia_pila(Stack* P1, Stack* P2) {
-   Stack* pilaAux 
+   Stack* pilaAux = create_stack(); 
+
    
 
 }
