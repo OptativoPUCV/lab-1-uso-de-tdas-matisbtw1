@@ -196,3 +196,10 @@ Compilation failed
 664e34d
  tests:  0|0
 556858e
+Fri, Mar 21, 2025 10:12:41 PM: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file a.out: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Compilation failed
+3fd37af
