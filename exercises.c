@@ -83,9 +83,8 @@ void eliminaElementos(List*L, int elem){
       if (*dato == elem)
       {
          popCurrent(L);
-      } else {
-         dato = next(L);
       }
+      dato = next(L);
    }
 }
 
@@ -124,12 +123,11 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 */
 
 int parentesisBalanceados(char *cadena) {
+   
+
+
 
    return 0;
 }
 
 
-/*iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii}
-ikkkkkoko
-kkk*/ 
-//llkjoi
