@@ -432,3 +432,9 @@ Sat, Mar 22, 2025  1:36:49 PM:
  tests:  4|1
 total_score: 50/70
 d8cd65f
+Sat, Mar 22, 2025  1:43:05 PM: 
+ exercises.c | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+ tests:  7|1
+total_score: 60/70
+f305404
