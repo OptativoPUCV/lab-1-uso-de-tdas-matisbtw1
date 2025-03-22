@@ -94,7 +94,7 @@ void eliminaElementos(List*L, int elem){
 Ejercicio 4.
 La función copia los punteros de la pila P1 en la pila P2.
 El orden de ambas pilas se debe mantener.
-Puedes usar una pila auxiliar.
+Puedes usar una pila auxiliar. dddd
 */
 
 void copia_pila(Stack* P1, Stack* P2) {
@@ -124,6 +124,31 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 */
 
 int parentesisBalanceados(char *cadena) {
+   Stack* P = create_stack();
+   int i = 0;
+   while (cadena[i] != '\0')
+   {
+      if (cadena[i] == '(')
+      {
+         push(P, &cadena[i]);
+      } else if (cadena[i] == ')')
+      {
+         if (top(P) == NULL)
+         {
+            free(P);
+            return 0;
+         }
+         pop(P);
+      }
+      i++;
+   }
+   if (top(P) == NULL)
+   {
+      free(P);
+      return 1;
+   }
+   free(P);
+   return 0;
 
    
 }
