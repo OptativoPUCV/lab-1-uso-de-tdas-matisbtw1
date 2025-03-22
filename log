@@ -401,3 +401,5 @@ c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot ope
 collect2.exe: error: ld returned 1 exit status
 Compilation failed
 b0a67fd
+ tests:  0|0
+970689b
