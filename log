@@ -140,3 +140,18 @@ exercises.c:129:1: error: control reaches end of non-void function [-Werror=retu
 cc1.exe: all warnings being treated as errors
 Compilation failed
 09af755
+Fri, Mar 21, 2025  9:27:59 PM: 
+ exercises.c | 15 +--------------
+ 1 file changed, 1 insertion(+), 14 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'copia_pila':
+exercises.c:101:11: error: unused variable 'pilaAux' [-Werror=unused-variable]
+    Stack* pilaAux = create_stack();
+           ^~~~~~~
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:116:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+567c894
