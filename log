@@ -129,3 +129,14 @@ c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot ope
 collect2.exe: error: ld returned 1 exit status
 Compilation failed
 a77c4cc
+Fri, Mar 21, 2025  9:23:32 PM: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:129:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+09af755
